@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaay Kundan Jewelry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #d4a373;
+            color: white;
+            padding: 15px;
+            font-size: 1.5em;
+        }
+        .jewelry-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item {
+            border: 2px solid #d4a373;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #d4a373;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #b07a50;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f3e9dd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Zaay Handmade Kundan Jewelry
+</header>
+
+<h2>Select Your Favorite Design</h2>
+
+<div class="jewelry-container">
+    <div class="item">
+        <img src="https://via.placeholder.com/200x200?text=Kundan+Set+1" alt="Design 1">
+        <p>Elegant Bridal Set</p>
+        <button onclick="selectDesign('Elegant Bridal Set')">Select</button>
+    </div>
+    <div class="item">
+        <img src="https://via.placeholder.com/200x200?text=Kundan+Set+2" alt="Design 2">
+        <p>Traditional Earrings</p>
+        <button onclick="selectDesign('Traditional Earrings')">Select</button>
+    </div>
+    <div class="item">
+        <img src="https://via.placeholder.com/200x200?text=Kundan+Set+3" alt="Design 3">
+        <p>Modern Necklace</p>
+        <button onclick="selectDesign('Modern Necklace')">Select</button>
+    </div>
+</div>
+
+<footer>
+    © 2025 Zaay Jewelry | WhatsApp: <a href="https://wa.me/923116555070">0311-6555070</a>
+</footer>
+
+<script>
+    function selectDesign(design) {
+        alert("You selected: " + design + "\nWe will contact you soon on WhatsApp!");
+    }
+</script>
+
+</body>
+</html>
