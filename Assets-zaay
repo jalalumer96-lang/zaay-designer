@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7e3b5"/>
+      <stop offset="50%" stop-color="#d9b65e"/>
+      <stop offset="100%" stop-color="#b68d40"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="80" rx="14" fill="url(#gold)" opacity=".08"/>
+  <text x="150" y="50" text-anchor="middle" font-size="38" font-family="Georgia, serif" fill="#b68d40" font-weight="700">ZAAY</text>
+  <text x="150" y="70" text-anchor="middle" font-size="12" font-family="Verdana" fill="#8a6a2a">Handmade Kundan Jewelry</text>
+</svg>
