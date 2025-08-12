@@ -1,0 +1,39 @@
+/* Zaay – Designer Game (golden-white theme) */
+:root{
+  --bg:#fff9f3; --card:#fff; --border:#f0e6cf;
+  --gold:#b68d40; --gold2:#d9b65e; --text:#22180f; --muted:#6b5b46;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial}
+.wrap{max-width:940px;margin:18px auto;padding:16px}
+.card{background:var(--card);border-radius:20px;box-shadow:0 12px 36px rgba(0,0,0,.07);padding:18px}
+.brand{display:flex;gap:10px;align-items:center;justify-content:center}
+.brand img{height:54px}
+.brand .name{font-weight:900;letter-spacing:.12em;color:var(--gold);font-size:14px}
+h1{margin:6px 0 6px;text-align:center;font-size:28px}
+.sub{margin:0 0 14px;text-align:center;color:var(--muted)}
+.progress{height:8px;background:#f2e7d4;border-radius:999px;overflow:hidden;margin:10px 0 16px}
+.progress .bar{height:100%;width:20%;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .35s ease}
+.step{display:none;animation:fade .3s ease} .step.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(4,1fr)}}
+.opt{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff;cursor:pointer;
+  transition:transform .25s, box-shadow .25s}
+.opt:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.07)}
+.opt input{display:none}
+.opt .thumb{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff,#fff6ea)}
+.opt .cap{padding:10px 12px;font-weight:800;color:#5a4630;font-size:14px;border-top:1px dashed var(--border);background:linear-gradient(0deg,#fff,#fffdf8)}
+.opt.selected{outline:2px solid var(--gold);box-shadow:0 0 0 4px #f6ead1}
+.nav{display:flex;gap:10px;justify-content:space-between;margin-top:12px;flex-wrap:wrap}
+.btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font-weight:900;letter-spacing:.02em;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#fff;box-shadow:0 6px 18px rgba(182,141,64,.35)}
+.btn-ghost{background:#efe6d6;color:#694f22}
+.field{margin:10px 0} label{font-weight:800;display:block;margin-bottom:6px;color:#5a4630}
+input[type=text]{width:100%;padding:12px;border-radius:12px;border:1px solid #eadcc2;background:#fff}
+.preview{background:#fff7ea;border:1px dashed #f1ddb7;border-radius:12px;padding:12px;margin-top:10px;font-size:14px;white-space:pre-line}
+footer{margin-top:14px;text-align:center;color:#8a7652;font-size:12px}
+.pill{display:inline-block;margin:2px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);color:#6b5b46;background:#fff}
+.center{text-align:center}
+.small{font-size:12px;color:#6b5b46}
